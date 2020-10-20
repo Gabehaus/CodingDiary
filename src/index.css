@@ -1,13 +1,88 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media (max-width: 3000px) {
+  .contentsBox {
+    width: 100vw;
+    height: 100vh;
+    background: blue;
+    color: white;
+  }
+
+  .diaryEntryBox {
+    position: absolute;
+    left: 25vw;
+    width: 50vw;
+    background: white;
+    color: black;
+    padding-left: 2vw;
+    font-family: "Poppins";
+  }
+
+  .clockBackgroundBox1 {
+    position: relative;
+    width: 30vw;
+  }
+
+  .clockBackground {
+    width: 100%;
+    height: 100%;
+  }
+
+  .finalAppBox {
+    position: relative;
+    width: 30vw;
+  }
+
+  .finalApp {
+    width: 100%;
+    height: 100%;
+  }
+
+  pre {
+    overflow: auto;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  pre > code {
+    display: block;
+    padding: 1rem;
+    word-wrap: pre-wrap;
+  }
+
+  h1 {
+    position: relative;
+
+    padding-top: 5vh;
+    color: red;
+    font-size: 3vw !important;
+  }
+}
+
+@media (max-width: 1100px) {
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 380px) and (min-height: 800px) {
+} /*Iphone*/
+
+@media (max-width: 320px) {
 }

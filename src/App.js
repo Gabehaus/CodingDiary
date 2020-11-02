@@ -13,6 +13,7 @@ import QuoteGen from "./Components/QuoteGen.jsx";
 import DrumMach from "./Components/DrumMach.jsx";
 import Calculator from "./Components/Calculator.jsx";
 import Markdown from "./Components/Markdown.jsx";
+import FatHacker from "./Components/FatHacker.jsx";
 
 function App(props) {
   return (
@@ -23,6 +24,7 @@ function App(props) {
       <Route exact path="/drumMach" component={DrumMach} />
       <Route exact path="/calculator" component={Calculator} />
       <Route exact path="/markdownPrev" component={Markdown} />
+      <Route exact path="/fathacker" component={FatHacker} />
     </BrowserRouter>
   );
 }

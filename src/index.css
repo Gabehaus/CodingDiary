@@ -18,7 +18,7 @@ code {
   .contentsBox {
     width: 100vw;
     height: 100vh;
-    background: blue;
+    background: none;
     color: white;
   }
 
@@ -35,6 +35,10 @@ code {
   .clockBackgroundBox1 {
     position: relative;
     width: 30vw;
+  }
+
+  .clockBackgroundBox2 {
+    width: 20vw;
   }
 
   .clockBackground {
@@ -58,6 +62,7 @@ code {
     white-space: -o-pre-wrap;
     white-space: pre-wrap;
     word-wrap: break-word;
+    padding: 25px;
   }
 
   pre > code {
@@ -66,23 +71,320 @@ code {
     word-wrap: pre-wrap;
   }
 
-  h1 {
+  .h1Contents,
+  .h2Contents,
+  .h3Contents {
     position: relative;
+    margin: 0 auto;
+    width: 30vw;
+    text-align: center;
 
     padding-top: 5vh;
-    color: red;
-    font-size: 3vw !important;
+    color: black;
+  }
+
+  .h1Contents {
+    font-size: 55px !important;
+  }
+
+  .h2Contents {
+    font-size: 25px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .profession {
+    position: relative;
+    margin: 0 auto;
+    width: 30vw;
+    text-align: center;
+
+    padding-top: 5vh;
+    color: black;
+    font-size: 20px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5vh;
+  }
+
+  .h3Contents {
+    margin-top: -10px !important;
+    font-size: 25px !important;
+  }
+
+  .h4Contents {
+    font-size: 15px !important;
+    color: #272b2e;
+    text-align: center;
+    margin-top: 10px !important;
+  }
+
+  .greenCode {
+    color: #1b8f53;
+  }
+
+  .linkButton {
+    border: none;
+    border-radius: 50px;
+    margin-left: 50%;
+    margin-top: 20px;
+
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 300px;
+    background: lightblue;
+    font-family: "Poppins";
+  }
+
+  .linksBox {
+    position: relative;
+    min-width: 100vw;
+    display: inline-block;
+    background: yellow;
+  }
+
+  img {
+    width: 30vw;
+    height: 18vw;
+    margin: 0;
+    margin-left: -1px;
+    margin-top: -1px;
+  }
+
+  a {
+    width: 30vw;
+  }
+
+  .entry {
+    border-style: none;
+    border-radius: 5px;
+    background: #343085;
+    font-family: "Poppins";
+
+    width: 12vw;
+
+    height: 32px;
+    color: white;
+  }
+
+  .card {
+    position: relative;
+    border-color: black;
+    background-color: #dad3e3 !important;
+    height: 55vh;
+    width: 30vw;
+    display: inline;
+  }
+
+  .cardClass {
+    display: inline;
+  }
+
+  .buttonLink {
+    margin-top: 20px;
+    width: 15vw;
+    margin-left: 9vw;
+    height: 30px;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-align: left;
+  }
+
+  h1 {
+    padding-top: 5vh;
   }
 }
 
 @media (max-width: 1100px) {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    height: 58vh;
+    width: 70vw;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+    margin-bottom: 5vh;
+  }
+
+  img {
+    width: 70vw;
+    height: 40vw;
+    margin: 0;
+  }
+
+  .cardClass {
+    margin: 0;
+  }
+
+  .buttonLink {
+    margin-top: 50px;
+    width: 20vw;
+    margin-left: 50%;
+
+    transform: translateX(-50%);
+    height: 60px;
+    padding: 0;
+    background: none;
+  }
+  .entry {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 20vw;
+    font-size: 25px;
+    border-radius: 10px;
+  }
+
+  .h2Contents,
+  .h3Contents,
+  .h4Contents {
+    background: none;
+    padding-top: 30px;
+  }
+
+  .h3Contents {
+    font-size: 44px !important;
+    background: none;
+    width: 50vw;
+    margin-top: 20px !important;
+  }
+
+  .h4Contents {
+    font-size: 30px !important;
+    background: none;
+    width: 50vw;
+    margin-left: 10vw;
+  }
+
+  .h1Contents {
+    background: none;
+    width: 80vw;
+  }
+}
+
+@media (max-width: 770px) {
+  .card {
+    height: 67vh;
+  }
+
+  .h3Contents {
+    width: 70vw;
+  }
+
+  .h4Contents {
+    width: 70vw;
+    font-size: 28px !important;
+    background: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .buttonLink {
+    margin-top: 50px;
+    width: 25vw;
+    margin-left: 50%;
+
+    transform: translateX(-50%);
+    height: 60px;
+    padding: 0;
+    background: none;
+  }
+  .entry {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 25vw;
+    font-size: 25px;
+    border-radius: 10px;
+  }
 }
 
 @media (max-width: 576px) {
+  .h1Contents {
+    font-size: 40px !important;
+  }
+
+  .h2Contents {
+    font-size: 25px !important;
+    width: 100vw;
+  }
+
+  .profession {
+    font-size: 20px !important;
+    width: 100vw;
+  }
+
+  .h3Contents {
+    padding-top: 10px;
+    font-size: 26px !important;
+    width: 100vw;
+    background: none;
+    width: 70vw;
+  }
+
+  .h4Contents {
+    padding-top: 10px;
+    font-size: 12px !important;
+  }
+
+  .buttonLink {
+    margin-top: 20px;
+    background: none;
+    height: 40px;
+  }
+
+  .entry {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .card {
+    height: 50vh;
+  }
 }
 
-@media (max-width: 380px) and (min-height: 800px) {
+@media (max-width: 380px) {
+  .card {
+    height: 55vh;
+  }
+
+  .buttonLink {
+    width: 40vw;
+  }
+
+  .entry {
+    width: 40vw;
+  }
 } /*Iphone*/
 
 @media (max-width: 320px) {
+  .h3Contents {
+    font-size: 22px !important;
+  }
+  .card {
+    height: 60vh;
+    margin-bottom: 50px;
+  }
+
+  .entry {
+    width: 40vw;
+  }
 }

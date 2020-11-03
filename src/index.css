@@ -48,6 +48,12 @@ code {
 
   .finalAppBox {
     position: relative;
+    display: inline-block;
+
+    width: 30vw;
+  }
+
+  .finalAppBox2 {
     width: 30vw;
   }
 
@@ -140,7 +146,7 @@ code {
     position: relative;
     min-width: 100vw;
     display: inline-block;
-    background: yellow;
+    background: none;
   }
 
   img {
@@ -203,9 +209,37 @@ code {
   h1 {
     padding-top: 5vh;
   }
+
+  .homeLink {
+    position: absolute;
+    left: -20vw;
+  }
+
+  .fatAnchor {
+    display: block;
+    font-size: 12px;
+  }
+
+  .fatAnchorBox {
+    position: absolute;
+    display: inline-block;
+    background: none;
+    width: 15vw;
+    margin-left: 2vw;
+    padding-top: 0vw;
+  }
 }
 
 @media (max-width: 1100px) {
+  .diaryEntryBox {
+    width: 98vw;
+    left: 0;
+  }
+
+  .homeLink {
+    left: 80vw;
+    width: 10vw;
+  }
   ul {
     margin: 0;
     padding: 0;
@@ -277,6 +311,22 @@ code {
   .h1Contents {
     background: none;
     width: 80vw;
+  }
+
+  .fatAnchorBox {
+    width: 38vw;
+  }
+
+  .finalAppBox {
+    width: 50vw;
+  }
+
+  .finalAppBox2 {
+    width: 50vw;
+  }
+
+  .clockBackgroundBox1 {
+    width: 50vw;
   }
 }
 
@@ -359,9 +409,20 @@ code {
   .card {
     height: 50vh;
   }
+
+  .fatAnchor {
+    display: block;
+    font-size: 8px;
+    margin-left: 0px;
+    word-wrap: nowrap;
+  }
+  .fatAnchorBox {
+    position: relative;
+    margin-left: 0;
+  }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 415px) {
   .card {
     height: 55vh;
   }
@@ -372,6 +433,11 @@ code {
 
   .entry {
     width: 40vw;
+  }
+  .fatAnchorBox {
+    position: absolute;
+    padding-left: 10px;
+    margin-left: 0;
   }
 } /*Iphone*/
 

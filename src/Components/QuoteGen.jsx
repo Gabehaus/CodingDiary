@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import quoteGenApp from "../images/quoteGenApp.png";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import dracula from "prism-react-renderer/themes/dracula";
@@ -33,13 +34,16 @@ export default function QuoteGen() {
 
   return (
     <div className="diaryEntryBox">
+      <Link to={"/"} className="homeLink">
+        Home
+      </Link>
       <h1 style={{ color: "blue" }}>
         <strong>React Random Quote Generator</strong>
       </h1>
       <br />
       <a target="_blank" href="https://gabehaus.github.io/ReactQuotes3/">
         <div className="finalAppBox">
-          <img className="finalApp" src={quoteGenApp} />
+          <img className="finalApp2" src={quoteGenApp} />
         </div>
       </a>
       <a target="_blank" href="https://gabehaus.github.io/ReactQuotes3/">

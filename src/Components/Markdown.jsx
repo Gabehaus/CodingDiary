@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import markdownApp from "../images/markdownApp.png";
 import finalClockApp from "../images/finalClockApp.png";
 import Highlight, { defaultProps } from "prism-react-renderer";
@@ -45,12 +46,15 @@ export default function Clock2() {
     `;
   return (
     <div className="diaryEntryBox">
+      <Link to={"/"} className="homeLink">
+        Home
+      </Link>
       <h1 style={{ color: "blue" }}>
         <strong>React Markdown Previewer</strong>
       </h1>
       <br />
       <a target="_blank" href="https://gabehaus.github.io/markdownViewer/">
-        <div className="finalAppBox">
+        <div className="finalAppBox2">
           <img className="finalApp" src={markdownApp} />
         </div>
       </a>

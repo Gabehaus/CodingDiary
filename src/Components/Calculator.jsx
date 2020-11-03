@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import calcApp from "../images/calcApp.png";
 
 import Highlight, { defaultProps } from "prism-react-renderer";
@@ -129,12 +130,15 @@ export default function Clock2() {
     `;
   return (
     <div className="diaryEntryBox">
+      <Link to={"/"} className="homeLink">
+        Home
+      </Link>
       <h1 style={{ color: "#8467a1" }}>
         <strong>React Calculator</strong>
       </h1>
       <br />
       <a target="_blank" href="https://gabehaus.github.io/calculator/">
-        <div className="finalAppBox">
+        <div className="finalAppBox2">
           <img className="finalApp" src={calcApp} />
         </div>
       </a>

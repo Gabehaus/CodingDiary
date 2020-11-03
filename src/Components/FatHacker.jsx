@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import fathackerApp from "../images/fathackerApp.png";
 import fathackerGuage1 from "../images/fathackerGuage1.png";
 import fathackerSearch1 from "../images/fathackerSearch1.png";
@@ -551,6 +552,9 @@ const checkTokenExpirationMiddleware = store => next => action => {
 
   return (
     <div className="diaryEntryBox">
+      <Link to={"/"} className="homeLink">
+        Home
+      </Link>
       <h1 style={{ color: "#1bcf87" }}>
         <strong>Fat Hacker</strong>
       </h1>
@@ -560,6 +564,31 @@ const checkTokenExpirationMiddleware = store => next => action => {
           <img className="finalApp" src={fathackerApp} />
         </div>
       </a>
+      <div className="fatAnchorBox">
+        <a href="/fatHacker#intro" className="fatAnchor">
+          Intro
+        </a>
+        <a href="/fatHacker#summary" className="fatAnchor">
+          App Summary
+        </a>
+        <a href="/fatHacker#frontEnd" className="fatAnchor">
+          Coding Concepts: Front-End
+        </a>
+        <a href="/fatHacker#backEnd" className="fatAnchor">
+          Coding Concepts: Back-End
+        </a>
+        <a href="/fatHacker#visual" className="fatAnchor">
+          Visual Design
+        </a>
+        <a href="/fatHacker#lessons" className="fatAnchor">
+          Lessons Learned
+        </a>
+        <a href="/fatHacker#improve" className="fatAnchor">
+          Room For Improvement
+        </a>
+      </div>
+      <br />
+      <br />
       <a target="_blank" href="https://fathacker.herokuapp.com/">
         VIEW APP
       </a>
@@ -571,12 +600,10 @@ const checkTokenExpirationMiddleware = store => next => action => {
         VIEW CODE
       </a>
       <br />
-      <br />
-      <br />
-      <h2>Introduction</h2>
+      <h2 id="summary">Introduction</h2>
       <p>
         I created all elements of this app myself using React, Redux, and
-        Express; with some help from a MERN tutorial series by Brad Traversy (on
+        Express. I referenced a MERN tutorial series by Brad Traversy (on
         creating a shopping list) which can be found{" "}
         <a
           href="https://www.youtube.com/watch?v=PBTYxXADG_k&list=PLillGF-RfqbbiTGgA77tGO426V3hRF9iE"
@@ -598,7 +625,7 @@ const checkTokenExpirationMiddleware = store => next => action => {
       </p>
       <br />
       <br />
-      <h2>App Summary</h2>
+      <h2 id="summary">App Summary</h2>
       <p>
         This app provides a user with a password protected, json-web-token
         protected user account. Users may store two sets of data in a MongoDB
@@ -683,7 +710,7 @@ const checkTokenExpirationMiddleware = store => next => action => {
       </p>
       <br />
       <br />
-      <h2>Main Code Concepts: Front-End</h2>
+      <h2 id="frontEnd">Main Code Concepts: Front-End</h2>
       <br />
       <br />
       <ul>
@@ -895,7 +922,7 @@ const checkTokenExpirationMiddleware = store => next => action => {
       </ul>
       <br />
       <br />
-      <h2>Main Code Concepts: Back-End</h2>
+      <h2 id="backEnd">Main Code Concepts: Back-End</h2>
       <br />
       <p>
         The backend of this app was built using Express, Mongoose, and Passport.
@@ -1326,7 +1353,7 @@ const checkTokenExpirationMiddleware = store => next => action => {
       </ul>
       <br />
       <br />
-      <h2>Visual Design</h2>
+      <h2 id="visual">Visual Design</h2>
       <br />
       <p>
         This app was styled using a combination of Bootstrap (reactstrap) and
@@ -1336,7 +1363,7 @@ const checkTokenExpirationMiddleware = store => next => action => {
       </p>
       <br />
       <br />
-      <h2>Lessons Learned</h2>
+      <h2 id="lessons">Lessons Learned</h2>
       <br />
       <ul>
         <li>
@@ -1452,7 +1479,7 @@ const checkTokenExpirationMiddleware = store => next => action => {
         <br />
         <br />
       </ul>
-      <h2>Room For Improvement</h2>
+      <h2 id="improve">Room For Improvement</h2>
       <br />
       <br />
       <p>

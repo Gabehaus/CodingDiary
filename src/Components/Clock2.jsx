@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import OriginalClockBackground from "../images/OriginalClockBackground.png";
 import finalClockApp from "../images/finalClockApp.png";
 import Highlight, { defaultProps } from "prism-react-renderer";
@@ -41,12 +42,15 @@ export default function Clock2() {
     `;
   return (
     <div className="diaryEntryBox">
+      <Link to={"/"} className="homeLink">
+        Home
+      </Link>
       <h1>
         <strong>React Pomodoro Clock</strong>
       </h1>
       <br />
       <a target="_blank" href="https://gabehaus.github.io/PomodoroClock/">
-        <div className="finalAppBox">
+        <div className="finalAppBox2">
           <img className="finalApp" src={finalClockApp} />
         </div>
       </a>
